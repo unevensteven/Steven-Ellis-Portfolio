@@ -22,7 +22,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="html/portfolio.html" class="nav-link">
+        <a href="#my-portfolio" class="nav-link">
           <span class="link-text">My Portfolio</span>
         </a>
       </li>
@@ -37,7 +37,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="html/contact-me.html" class="nav-link">
+        <a href="#contact=me" class="nav-link">
           <span class="link-text">Contact Me</span>
         </a>
       </li>
@@ -64,13 +64,13 @@
   </div>
 
   <div>
-    <ul class="my-projects">
+    <ul class="my-projects" id="my-portfolio">
       <li class="project"><iframe src="https://steven-ellis.netmatters-scs.co.uk/" title="Project 1" ></iframe></li>
-      <li class="project"> Project Two    </li >
-      <li class="project"> Project Three     </li >
-      <li class="project"> Project Four     </li >
-      <li class="project"> Project Five     </li >
-      <li class="project"> Project Six     </li >
+      <li class="project"><a href="html/portfolio.html">Portfolio</a></li >
+      <li class="project"><a href="html/portfolio.html">Portfolio</a></li >
+      <li class="project"><a href="html/portfolio.html">Portfolio</a></li >
+      <li class="project"><a href="html/portfolio.html">Portfolio</a></li >
+      <li class="project"><a href="html/portfolio.html">Portfolio</a></li >
       
     </ul>
   </div>
@@ -83,7 +83,7 @@
 
 
   <!-- Contact Form -->
-  <div class="contact-frm">
+  <div class="contact-frm" id="contact=me">
     <div class="my-contact-details">
       <h2>Get In Touch.</h2>
       <p>mon-fri</p>
@@ -95,16 +95,17 @@
       <p></p>
     </div>
     <form>
+          <div class="contact-form-names">
+            <input type="text" id="fname" name="fname" placeholder="First Name..">
+            <input type="text" id="lname" name="lname" placeholder="Last Name..">
+          </div>
         <br>
-          
-          <input type="text" id="fname" name="fname" placeholder="First Name.."><br>
+        <div class="contact-form-row">
+          <input type="text" id="email" name="email" placeholder="Email Address.."><br>
           <br>
-          <input type="text" id="lname" name="lname" placeholder="Last Name.."><br>
-        <br>
-        <input type="text" id="email" name="email" placeholder="Email Address.."><br>
-        <br>
-        <input type="text" id="subject" name="subject" placeholder="Subject.."><br>
-        <br>
+          <input type="text" id="subject" name="subject" placeholder="Subject.."><br>
+          <br>
+        </div>  
         <textarea id="message" name="message" rows="8" cols="80" placeholder="Please type your message here.."></textarea><br>
         <button class="contact-btn">Submit</button>
     </form>

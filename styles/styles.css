@@ -59,7 +59,7 @@ main{
 
 /* Style lines below  nav-links to show when hovered over */
 li > a {
-  position: relative; //
+  position: relative;
   text-decoration: none; 
 }
 
@@ -149,8 +149,32 @@ flex-basis: calc(100% /2);
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border: none;
 }
 .my-contact-details{
   padding-left: 20px;
   padding-right: 20px;
+}
+
+/* Style the inputs on my contact form */
+input[type="text"] {
+  background-color: aliceblue;
+  height: 35px;
+  width: 100%;
+  border: none;
+}
+
+textarea {
+  background-color: aliceblue;
+ border: none;
+}
+textarea, 
+input:focus{
+  outline: none;
+  box-shadow: inset 1px 1px 5px 1px grey;
+}
+
+.contact-form-names{
+  display:flex;
+  gap: 20px;
 }
