@@ -39,19 +39,47 @@ main{
   display: flex;
   align-items: center;
   text-decoration: none;
+  transform: translateY(3px);
+  transition: transform 1s;
+  margin-bottom: 10px;
 }
 .nav-link:hover{
-  text-decoration: underline;
+  
+  transform: translateY(-3px);
+  transition: transform 1s;
+
 }
 .link-text{
-  border: 1px solid blue;
   padding: 10px;
   margin-bottom:10px;
 }
-
 .logo{
   text-align: center;
 }
+
+/* Style lines below  nav-links to show when hovered over */
+li > a {
+  position: relative; //
+  text-decoration: none; 
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Position the line below the anchor element */
+  width:0;
+  height: 2px;
+  background-color:blue; /* Line color */
+  transition: width 0.7s;
+}
+a::after {
+  right: 0;
+}
+a:hover::after {
+  width: 100%; /* Extend the lines to 50% of the anchor element's width */
+}
+
+
 
 /* ============================ Banner Image */
 .banner-image{
@@ -121,5 +149,8 @@ flex-basis: calc(100% /2);
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-
+}
+.my-contact-details{
+  padding-left: 20px;
+  padding-right: 20px;
 }
