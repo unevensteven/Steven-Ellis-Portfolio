@@ -196,7 +196,18 @@ input:focus{
   text-decoration: none;
 }
 
+/* Back Button on pages to return to homepage  */
+/* <a href="http://127.0.0.1:5500/">back</a> */
+.back-button{
+  margin-left: 50px;
+  padding: 15px;
+  border:1px solid rgb(102, 102, 102);
+  background-color: grey;
+  color: aliceblue;
+  text-decoration: none;
+  border-radius: 5px;
 
+}
 
 /* ===================================  Media Queries */
 @media (max-width:1179px){
