@@ -78,8 +78,6 @@ a:hover::after {
   width: 100%; /* Extend the lines to 50% of the anchor element's width */
 }
 
-
-
 /* ============================ Banner Image */
 .banner-image{
   background-image: url(/img/Banner-image.jpg);
@@ -119,8 +117,6 @@ a:hover::after {
 .project{
   flex-basis: calc(99% /3);
   box-sizing: border-box;
-  
-  padding:50px;
   transform: translateY(4px);
   transition: transform 0.9s;
 }
@@ -185,7 +181,20 @@ input:focus{
   gap: 20px;
 }
 
-
+/* =================================== footer */
+.my-footer, 
+.my-footer a{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(56, 56, 56);
+  height:3rem;
+}
+.my-footer a{
+  color: white;
+  text-decoration: none;
+}
 
 
 
@@ -195,6 +204,6 @@ input:focus{
     display: none;
   }main{
     margin-left: 0;  /*dedicated space for nav in wider screens bar*/
-    padding: 1rem;
+    
     }
   }
