@@ -144,28 +144,74 @@ a:hover::after {
   background-size: cover;
 }
 
-/* ============================================== Contact form */
+
+/* ======================================= Contact form media query < 1179px  */
+.my-contact-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contact-frm{
-display: flex;
-justify-content: space-between;
+  margin-left: 15px;
+}
+.contact-form-names{
+  display: flex;
+  flex-direction: column;
 }
 .contact-btn{
   color: black;
-  background-color: white;
+  background-color: rgb(224, 221, 221);
+  border: 1px solid gray;
   border-radius: 4px;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: none;
 }
-.my-contact-details{
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  align-items: start;
+
+@media (min-width:577px){
+  .contact-form-names{
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+    max-width: 93vw;
+  }
 }
+
+
+@media (min-width:1180px){
+  .contact-form-names{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* overflow-x: auto; */
+    min-width: 500px;
+    max-width: 600px;
+
+  }
+  .contact-frm{
+    display: flex;
+    justify-content: space-around;
+  }.contact-btn{
+    color: black;
+    background-color: rgb(224, 221, 221);
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .my-contact-details{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form-row{
+    min-width: 500px;
+    max-width: 600px;
+  }
+}
+
 
 /* Style the inputs on my contact form */
 input[type="text"] {
@@ -186,13 +232,11 @@ input:focus{
   box-shadow: inset 1px 1px 5px 1px grey;
 }
 
-.contact-form-names{
-  display:flex;
-  gap: 15px;
-  max-width: 40vw;
-}
 
 /* =================================== footer */
+.my-footer{
+  padding: 10px;
+}
 .my-footer, 
 .my-footer a{
   display: flex;
