@@ -109,6 +109,7 @@ a:hover::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-bottom: 20px;
 }
 .article {  /* ========================== card */
   color: black;
@@ -132,7 +133,12 @@ a:hover::after {
   min-width:400px;
  }
  /* style the buttons in each card */
- .btn-1{
+ .btn-1,
+ .btn-2, 
+ .btn-3, 
+ .btn-4, 
+ .btn-5, 
+ .btn-6{
   color: white;
   background-color:#2DCC71;
   border-radius: 3px;
@@ -142,133 +148,9 @@ a:hover::after {
   margin-top: -10px;
   margin-bottom: 10px;
 }
-.btn-2{
-  color: white;
-  background-color: #2DCC71;
-  border-radius: 3px;
-  padding:10px;
-  border: none;
-  text-decoration: none;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-.btn-3{
-  color: white;
-  background-color: rgb(150, 109, 150);
-  border-radius: 3px;
-  padding:10px;
-  border: none;
-  text-decoration: none;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-@media (max-width:759px){
-  .latest-news{
-    display: flex;
-    flex-direction: column;
-   
-  }
-  .article-1{
-    padding-top: 320px;
-  }
-  .article-2{
-    padding-top: 320px;
-  }
-  .article-3{
-    padding-top: 320px;
-  }
- }
- 
- @media (min-width:760px){
-  .latest-news{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .article{
-    width: 330px;
-  }
-  .news3{
-    display: none;
-  }
-  .partial-line{
-    min-width: 260px;
-  }
-  .article-1{
-    padding-top: 200px;
-  }
-  .article-2{
-    padding-top: 200px;
-  }
-  .article-3{
-    padding-top: 200px;
-  }
- }
- @media (min-width:990px) {
-    
-  .article{
-  width: 440px
-  }
-  .news3{
-    display: none;
-  }
-  .partial-line{
-    min-width: 380px;
-  }
-  .article-1{
-    padding-top: 240px;
-  }
-  .article-2{
-    padding-top: 240px;
-  }
-  .article-3{
-    padding-top: 240px;
-  }
-}
-@media(min-width:1275px){
-  .article{
-    width: 380px
-    }
-    .news3{
-      display: block;
-    }
-    .partial-line{
-      min-width: 340px;
-    }
-    .article-1{
-      padding-top: 220px;
-    }
-    .article-2{
-      padding-top: 220px;
-    }
-    .article-3{
-      padding-top: 220px;
-    }
-  }
-  .card-title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 25px; 
-  }
-  .article-1{
-    background-image:  url(../img/coming-soon.jpeg);
-    background-size: 100% auto; 
-    background-repeat: no-repeat;
-  }
 
-  .article-2{
-    background-image: url(../img/coming-soon.jpeg);
-    background-size: 100% auto; 
-    background-repeat: no-repeat;
-   }
 
-   .article-3{
-    background-image: url(../img/coming-soon.jpeg);
-    background-size: 100% auto; 
-    background-repeat: no-repeat;
-   }
+
      /* .journalist image with before */
  .outer-container{
   display: flex;
@@ -281,37 +163,6 @@ a:hover::after {
 }
 
 /* End of the portolio cards   */
-
-.my-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-}
-.project {
-  min-width: 300px;
-  width: 80vw;
-  height: 400px;
-  border: 1px solid black;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-.portfolio-image{
-  background-image: url(/img/coming-soon.jpeg);
-  height: 400px;
-  background-position: center;
-  background-size: cover;
-  position: relative;
- 
-  transform: translateY(4px);
-  transition: transform 0.9s;
-}
-.portfolio-image:hover{
-  transform: translateY(-4px);
-  transition: transform 0.9s;
-}
-
-
 
 
 /* ===================================== Contact form media query < 1179px  */
@@ -351,11 +202,16 @@ textarea {
   background-color: aliceblue;
   border: none;
   width: 97%;
+  box-shadow: none;
+  outline: none;
 }
-textarea, 
+
 input:focus{
   outline: none;
-  box-shadow: inset 1px 1px 5px 1px grey;
+  box-shadow: 1px 1px 5px 3px #1D75BC, -1px -1px 5px 1px #1D75BC;
+}
+textarea:focus{
+  box-shadow: 1px 1px 5px 1px #1D75BC, -1px -1px 5px 1px #1D75BC;
 }
 
 
@@ -467,3 +323,100 @@ input:focus{
     border-radius: 5px;
   }
 }
+
+@media (max-width:759px){
+  .latest-news{
+    display: flex;
+    flex-direction: column;
+  }
+  .article-1,
+  .article-2,
+  .article-3, 
+  .article-4,
+  .article-5, 
+  .article-6{
+    padding-top: 320px;
+  }
+ }
+ 
+ @media (min-width:760px){
+  .latest-news{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .article{
+    width: 330px;
+  }
+  /* .news3{
+    display: none;
+  } */
+  .partial-line{
+    min-width: 260px;
+  }
+  .article-1,
+  .article-2,
+  .article-3, 
+  .article-4,
+  .article-5, 
+  .article-6{
+    padding-top: 200px;
+  }
+ }
+
+ @media (min-width:990px) {
+    
+  .article{
+  width: 440px
+  }
+  /* .news3{
+    display: none; */
+  }
+  .partial-line{
+    min-width: 380px;
+  }
+  .article-1,
+  .article-2,
+  .article-3, 
+  .article-4,
+  .article-5, 
+  .article-6{
+    padding-top: 240px;
+  }
+ 
+@media(min-width:1275px){
+  .article{
+    width: 30%;
+    }
+    .news3{
+      display: block;
+    }
+    .partial-line{
+      min-width: 340px;
+    }
+    .article-1,
+    .article-2,
+    .article-3,
+    .article-4,
+    .article-5, 
+    .article-6{
+      padding-top: 220px;
+    }
+  }
+  .card-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px; 
+  }
+    .article-1,
+    .article-2,
+    .article-3, 
+    .article-4,
+    .article-5, 
+    .article-6{
+    background-image:  url(../img/coming-soon.jpeg);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+  }
