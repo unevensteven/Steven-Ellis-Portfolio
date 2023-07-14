@@ -13,7 +13,7 @@ body{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   --text-primary:rgb(134, 204, 228);
-  --nav-bar-color: #6EABFA;
+  --nav-bar-color: #1D75BC;
 }
 
 main{
@@ -73,7 +73,7 @@ a::after {
   bottom: -2px; /* Position the line below the anchor element */
   width:0;
   height: 2px;
-  background-color:blue; /* Line color */
+  background-color: #1D75BC; /* Line color */
   transition: width 0.7s;
 }
 a::after {
