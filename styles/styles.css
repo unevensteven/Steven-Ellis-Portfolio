@@ -1,8 +1,10 @@
+
 body{
   box-sizing: border-box;
   background-color: rgb(218, 213, 213);
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
  }
  main{
   margin: 0;
@@ -98,69 +100,43 @@ a:hover::after {
   top: 10%;
   left: 55%;
   }
-  @media (max-width:1179px){
-  .mini-menu{
-    background-image: url(/img/hamburger.png);
-    height: 45px;
-    width: 45px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    opacity: 0.8;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 5px;
-  }
-}
+ 
 
 /* =============================== EOF Hero image */
-.my-projects{
+
+.my-projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
 }
-
-.my-projects > *{
+.project {
+  min-width: 300px;
+  width: 80vw;
+  height: 400px;
   border: 1px solid black;
   border-radius: 4px;
-  height: 400px;
-  width: 250px;
-  margin-left: 1px;
-  margin-bottom: 10px;  
-  transform: translateY(4px);
-  transition: transform 0.9s;
-}
-.projects:hover{
-  transform: translateY(-4px);
-  transition: transform 0.9s;
-}
-.project{
-  flex-basis: calc(99% /3);
-  box-sizing: border-box;
-  transform: translateY(4px);
-  transition: transform 0.9s;
-}
-.project:hover{
-  cursor: pointer;
-  transform: translateY(-4px);
-  transition: transform 0.9s;
-  }
-.project iframe{
-  width: 100%;
-  height: 100%;
-  border: none; /* Removes iframe border */
-  overflow: hidden;
+  margin-bottom: 10px;
 }
 .portfolio-image{
-  background-image: url("/img/coming-soon.jpeg");
+  background-image: url(/img/coming-soon.jpeg);
+  height: 400px;
   background-position: center;
   background-size: cover;
+  position: relative;
+ 
+  transform: translateY(4px);
+  transition: transform 0.9s;
+}
+.portfolio-image:hover{
+  transform: translateY(-4px);
+  transition: transform 0.9s;
 }
 
 
-/* ======================================= Contact form media query < 1179px  */
+
+
+/* ===================================== Contact form media query < 1179px  */
 .my-contact-details{
   display: flex;
   flex-direction: column;
@@ -182,51 +158,6 @@ a:hover::after {
   padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-@media (min-width:577px){
-  .contact-form-names{
-    display:flex;
-    flex-direction: row;
-    gap: 15px;
-    max-width: 93vw;
-  }
-}
-
-
-@media (min-width:1180px){
-  .contact-form-names{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* overflow-x: auto; */
-    min-width: 500px;
-    max-width: 600px;
-  }
-  .contact-frm{
-    display: flex;
-    justify-content: space-around;
-  }.contact-btn{
-    color: black;
-    background-color: rgb(224, 221, 221);
-    border: 1px solid gray;
-    border-radius: 4px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .my-contact-details{
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-form-row{
-    min-width: 500px;
-    max-width: 600px;
-  }
-  .mini-menu{
-    display: none;
-  }
 }
 
 
@@ -278,15 +209,83 @@ input:focus{
   color: aliceblue;
   text-decoration: none;
   border-radius: 5px;
+}
 
+.about-me{
+  margin:  50px;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+.about-text{
+  margin-bottom: 20px;
 }
 
 /* ===================================  Media Queries */
+
+@media (min-width:577px){
+  .contact-form-names{
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+    max-width: 93vw;
+  }
+}
+
+@media (min-width:1180px){
+  .contact-form-names{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* overflow-x: auto; */
+    min-width: 500px;
+    max-width: 600px;
+  }
+  .contact-frm{
+    display: flex;
+    justify-content: space-around;
+  }.contact-btn{
+    color: black;
+    background-color: rgb(224, 221, 221);
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .my-contact-details{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form-row{
+    min-width: 500px;
+    max-width: 600px;
+  }
+  .mini-menu{
+    display: none;
+  }
+}
+
 @media (max-width:1179px){
   .nav-bar{
     display: none;
   }main{
     margin-left: 0;  /*dedicated space for nav in wider screens bar*/
-    
-    }
   }
+  .mini-menu{
+    background-image: url(/img/hamburger.png);
+    height: 45px;
+    width: 45px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+  }
+}
