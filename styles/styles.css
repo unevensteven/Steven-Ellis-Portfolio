@@ -104,6 +104,184 @@ a:hover::after {
 
 /* =============================== EOF Hero image */
 
+/* Start of the portolio cards   */
+.latest-news{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.article {  /* ========================== card */
+  color: black;
+  min-height: 60vh;
+  max-height: 85vh;
+  max-width:600px;
+  transform: translateY(5px);
+  transition: transform 0.8s ease;
+  margin: 10px;
+  border:1px solid gray;
+  border-radius: 4px;
+}
+.article:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.8s ease;
+}
+.partial-line{
+  border-top: 1px solid rgb(175, 173, 173);
+  align-self: center;
+  min-width:400px;
+ }
+ /* style the buttons in each card */
+ .btn-1{
+  color: white;
+  background-color:#2DCC71;
+  border-radius: 3px;
+  padding:10px;
+  border: none;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.btn-2{
+  color: white;
+  background-color: #2DCC71;
+  border-radius: 3px;
+  padding:10px;
+  border: none;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.btn-3{
+  color: white;
+  background-color: rgb(150, 109, 150);
+  border-radius: 3px;
+  padding:10px;
+  border: none;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+@media (max-width:759px){
+  .latest-news{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .article-1{
+    padding-top: 320px;
+  }
+  .article-2{
+    padding-top: 320px;
+  }
+  .article-3{
+    padding-top: 320px;
+  }
+ }
+ 
+ @media (min-width:760px){
+  .latest-news{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .article{
+    width: 330px;
+  }
+  .news3{
+    display: none;
+  }
+  .partial-line{
+    min-width: 260px;
+  }
+  .article-1{
+    padding-top: 200px;
+  }
+  .article-2{
+    padding-top: 200px;
+  }
+  .article-3{
+    padding-top: 200px;
+  }
+ }
+ @media (min-width:990px) {
+    
+  .article{
+  width: 440px
+  }
+  .news3{
+    display: none;
+  }
+  .partial-line{
+    min-width: 380px;
+  }
+  .article-1{
+    padding-top: 240px;
+  }
+  .article-2{
+    padding-top: 240px;
+  }
+  .article-3{
+    padding-top: 240px;
+  }
+}
+@media(min-width:1275px){
+  .article{
+    width: 380px
+    }
+    .news3{
+      display: block;
+    }
+    .partial-line{
+      min-width: 340px;
+    }
+    .article-1{
+      padding-top: 220px;
+    }
+    .article-2{
+      padding-top: 220px;
+    }
+    .article-3{
+      padding-top: 220px;
+    }
+  }
+  .card-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px; 
+  }
+  .article-1{
+    background-image:  url(../img/coming-soon.jpeg);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+  }
+
+  .article-2{
+    background-image: url(../img/coming-soon.jpeg);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+   }
+
+   .article-3{
+    background-image: url(../img/coming-soon.jpeg);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+   }
+     /* .journalist image with before */
+ .outer-container{
+  display: flex;
+  justify-content: space-between;
+ }
+  .inner-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+/* End of the portolio cards   */
+
 .my-projects {
   display: flex;
   flex-direction: column;
