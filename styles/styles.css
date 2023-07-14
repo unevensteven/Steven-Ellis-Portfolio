@@ -98,6 +98,21 @@ a:hover::after {
   top: 10%;
   left: 55%;
   }
+  @media (max-width:1179px){
+  .mini-menu{
+    background-image: url(/img/hamburger.png);
+    height: 45px;
+    width: 45px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+  }
+}
 
 /* =============================== EOF Hero image */
 .my-projects{
@@ -187,7 +202,6 @@ a:hover::after {
     /* overflow-x: auto; */
     min-width: 500px;
     max-width: 600px;
-
   }
   .contact-frm{
     display: flex;
@@ -209,6 +223,9 @@ a:hover::after {
   .contact-form-row{
     min-width: 500px;
     max-width: 600px;
+  }
+  .mini-menu{
+    display: none;
   }
 }
 
