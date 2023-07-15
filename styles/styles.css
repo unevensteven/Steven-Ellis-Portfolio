@@ -226,10 +226,10 @@ textarea {
 
 input:focus{
   outline: none;
-  box-shadow: 1px 1px 5px 3px #1D75BC, -1px -1px 5px 1px #1D75BC;
+  box-shadow: 1px 1px 15px 5px rgb(109, 109, 109), -1px -1px 5px 1px rgb(109, 109, 109);
 }
 textarea:focus{
-  box-shadow: 1px 1px 5px 1px #1D75BC, -1px -1px 5px 1px #1D75BC;
+  box-shadow: 1px 1px 15px 5px rgb(109, 109, 109), -1px -1px 5px 1px rgb(109, 109, 109);
 }
 
 
@@ -356,8 +356,15 @@ textarea:focus{
   .article-4,
   .article-5, 
   .article-6{
-    padding-top: 320px;
+    padding-top: 620px;
  }
+ .card-title{
+  padding-top: 240px;
+ }
+ .partial-line{
+  min-width: 65vw;
+  max-width: 90vw;
+}
 }
  
  @media (min-width:720px){
@@ -368,10 +375,14 @@ textarea:focus{
     justify-content: space-around;
   }
   .article{
-    width: 330px;
+    max-width: 37vw;
+  }
+  .card-title{
+    padding-top: 100px;
   }
   .partial-line{
-    min-width: 260px;
+    min-width: 25vw;
+    max-width: 40vw;
   }
   .article-1,
   .article-2,
@@ -379,7 +390,7 @@ textarea:focus{
   .article-4,
   .article-5, 
   .article-6{
-    padding-top: 200px;
+    padding-top: 280px;
   }
  }
 
@@ -392,7 +403,7 @@ textarea:focus{
     display: none; */
   }
   .partial-line{
-    min-width: 380px;
+    min-width: 300px;
   }
   .article-1,
   .article-2,
