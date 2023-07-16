@@ -165,8 +165,6 @@ a:hover::after {
   margin-bottom: 10px;
 }
 
-
-
      /* .journalist image with before */
  .outer-container{
   display: flex;
@@ -253,7 +251,7 @@ textarea:focus{
 /* Back Button on pages to return to homepage  */
 /* <a href="http://127.0.0.1:5500/">back</a> */
 .back-button{
-  margin-left: 50px;
+  margin-left: 210px;
   padding: 15px;
   border:1px solid rgb(102, 102, 102);
   background-color: grey;
@@ -263,7 +261,8 @@ textarea:focus{
 }
 
 .about-me{
-  margin:  50px;
+  margin-left:  10rem;
+  padding: 50px;
 }
 .about{
   display: flex;
@@ -273,15 +272,56 @@ textarea:focus{
 .about-text{
   margin-bottom: 20px;
 }
+.scs-scheme{
+  font-weight: 600;
+  color:black;
+}
+
+/* ============== Coding Examples Page*/
+#coding-ex{
+  margin-left: 250px; 
+  padding-top: 0; 
+  margin-top: -22px;
+}
+
+.my-coding{
+  margin-left: 15vw;
+  padding-bottom: 50px ;
+}
+
+/* ================ SCS pagestyling  */
+#scs-page{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 
 /* ===================================  Media Queries */
 
-@media (min-width:577px){
+
+
+@media (max-width:1179px){
+  .about-me,
+  #coding-ex{
+    margin-left:  0;
+    padding: 50px;
+  }
+  .back-button{
+    margin-left: 50px;
+  }
+}
+@media (max-width:1179px){
   .contact-form-names{
     display:flex;
-    flex-direction: row;
-    gap: 15px;
-    max-width: 93vw;
+    gap: 25px;
+    max-width: 98vw;
+  }
+}
+@media (min-width:719px) and (max-width:1179px){
+#getintouch{
+  margin-left: 5vw;
+  margin-right: 5vw;
   }
 }
 
@@ -290,7 +330,7 @@ textarea:focus{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* overflow-x: auto; */
+    gap: 25px;
     min-width: 500px;
     max-width: 600px;
   }
@@ -348,6 +388,11 @@ textarea:focus{
   .latest-news{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .article{
+    max-width:500px;
   }
   .article-1,
   .article-2,
@@ -356,9 +401,13 @@ textarea:focus{
   .article-5, 
   .article-6{
     padding-top: 620px;
+    width:70vw;
  }
  .card-title{
   padding-top: 240px;
+ }
+ .my-footer a{
+  font-size: .8em;
  }
  /* .partial-line{
   min-width: 65vw;
@@ -374,7 +423,7 @@ textarea:focus{
     justify-content: space-around;
   }
   .article{
-    max-width: 37vw;
+   max-width: 300px;
   }
   .card-title{
     padding-top: 100px;
@@ -386,6 +435,7 @@ textarea:focus{
   .article-5, 
   .article-6{
     padding-top: 280px;
+    width: 300px;
   }
  }
 
@@ -408,34 +458,41 @@ textarea:focus{
  
 @media(min-width:1275px){
   .article{
-    width: 30%;
+    width: 300px;
     }
-    .news3{
-      display: block;
-    }
+      /* .news3{
+        display: block;
+      } */
     .article-1,
     .article-2,
     .article-3,
     .article-4,
     .article-5, 
     .article-6{
-      padding-top: 220px;
+      padding-top: 240px;
+      max-width: 300px;
     }
   }
+
   .card-title{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 25px; 
+    margin-left: 35px; 
   }
-    .article-1,
+    .article-1{
+      background-image:  url(../img/clone-website-image.png);
+      filter: grayscale(30%);
+      background-size: 150%; 
+      background-repeat: no-repeat;
+    }
     .article-2,
     .article-3, 
     .article-4,
     .article-5, 
     .article-6{
-    background-image:  url(../img/coming-soon.jpeg);
-    filter: grayscale(30%);
-    background-size: 100% auto; 
-    background-repeat: no-repeat;
+      background-image:  url(../img/coming-soon.jpeg);
+      filter: grayscale(50%);
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
   }
