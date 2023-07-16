@@ -1,13 +1,13 @@
 
 body{
   box-sizing: border-box;
-  background-color: rgb(218, 213, 213);
+  background-color: rgb(245, 243, 243);
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
  }
  main{
-  margin: 0;
+  margin-left: 10rem;  /*dedicated space for nav bar in wider screend*/
   padding: 0;
  }
 
@@ -18,15 +18,12 @@ body{
   --nav-bar-color: #1D75BC;
 }
 
-main{
-  margin-left: 10rem;  /*dedicated space for nav bar in wider screend*/
-}
 
 .nav-bar{
   width: 10rem;
   height: 100vh;
   position: fixed;
-  border-right: 5px solid var(--nav-bar-color);
+  border-right: 2px solid black;
   background-color: white;
 }
 .nav-bar-nav{
@@ -145,11 +142,12 @@ a:hover::after {
   transform: translateY(-5px);
   transition: transform 0.8s ease;
 }
-.partial-line{
+/* .partial line Not required ATM */
+/* .partial-line{
   border-top: 1px solid rgb(175, 173, 173);
   align-self: center;
   min-width:400px;
- }
+ } */
  /* style the buttons in each card */
  .btn-1,
  .btn-2, 
@@ -210,18 +208,19 @@ a:hover::after {
 
 /* Style the inputs on my contact form */
 input[type="text"] {
-  background-color: aliceblue;
+  background-color: white;
   height: 35px;
   width: 97%;
   border: none;
+  outline: 1px solid rgb(182, 181, 181);
 }
 
 textarea {
-  background-color: aliceblue;
+  background-color:white;
   border: none;
   width: 97%;
   box-shadow: none;
-  outline: none;
+  outline: 1px solid rgb(182, 181, 181);
 }
 
 input:focus{
@@ -361,11 +360,11 @@ textarea:focus{
  .card-title{
   padding-top: 240px;
  }
- .partial-line{
+ /* .partial-line{
   min-width: 65vw;
-  max-width: 90vw;
+  max-width: 90vw; */
 }
-}
+
  
  @media (min-width:720px){
   .latest-news{
@@ -379,10 +378,6 @@ textarea:focus{
   }
   .card-title{
     padding-top: 100px;
-  }
-  .partial-line{
-    min-width: 25vw;
-    max-width: 40vw;
   }
   .article-1,
   .article-2,
@@ -402,9 +397,6 @@ textarea:focus{
   /* .news3{
     display: none; */
   }
-  .partial-line{
-    min-width: 300px;
-  }
   .article-1,
   .article-2,
   .article-3, 
@@ -420,9 +412,6 @@ textarea:focus{
     }
     .news3{
       display: block;
-    }
-    .partial-line{
-      min-width: 340px;
     }
     .article-1,
     .article-2,
@@ -446,6 +435,7 @@ textarea:focus{
     .article-5, 
     .article-6{
     background-image:  url(../img/coming-soon.jpeg);
+    filter: grayscale(30%);
     background-size: 100% auto; 
     background-repeat: no-repeat;
   }
