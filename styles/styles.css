@@ -277,6 +277,30 @@ textarea:focus{
   color:black;
 }
 
+.scion-scheme-1{
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding:10px;
+  border-radius: 7px;
+  background-color: rgb(221, 218, 218);
+  transform: translateX(-5px);
+  transition: transform 0.8s ease;
+  width: 75vw;
+}
+
+
+.scion-scheme-1:hover{
+  transform: translateX(5px);
+  box-shadow: 5px 8px 10px rgb(48, 47, 47);
+}
+p > a {
+  position: centre;
+  text-decoration: none; 
+  font-weight: 600;
+  color: rgb(119, 119, 207);
+}
+
 /* ============== Coding Examples Page*/
 #coding-ex{
   margin-left: 250px; 
