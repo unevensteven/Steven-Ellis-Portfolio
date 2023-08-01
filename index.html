@@ -57,7 +57,8 @@
     <div class="mini-menu"></div>
     <div class="hero-text">
       <h1>Hello, My name is Steven Ellis</h1>
-      <p>And I'm a web developer</p>
+      <!-- Edited here -->
+      <p id="text"></p>
     </div>
   </div>
   
@@ -228,7 +229,28 @@
 </main>
 
 
+<script type="text/javascript">
+  var i=0,text;
+  text = "And I am a web developer."
 
+  function typing(){
+    var targetElement = document.getElementById("text");
+    if (i < text.length) {
+    targetElement.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 150);
+  } else {
+    // Clear the text and reset 'i' before starting the animation again
+    targetElement.innerHTML = "";
+    i = 0;
+    setTimeout(startTypingLoop, 1000); 
+  }
+}
+function startTypingLoop() {
+  typing();
+}
+startTypingLoop();
+</script>
 
 
 </body>
