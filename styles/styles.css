@@ -318,6 +318,47 @@ p > a {
   padding-left: 50px;
   padding-right: 50px;
 }
+
+
+/* mobile-nav styling */
+
+.mobile-nav{
+  position:fixed;
+  top:0;
+  left:100%;
+  width:100%;
+  min-height:100vh;
+  display:block;
+  z-index:91;
+  background-color:black;
+  padding-top:120px;-webkit-transition:0.4s;
+  transition:0.4s}
+  
+  .mobile-nav.is-active{
+    left:0
+  }
+  .mobile-nav a{
+    display:block;
+    width:100%;
+    max-width:200px;
+    margin:0 auto 16px;
+    text-align:center;
+    padding:12px 16px;
+    background-color:grey;
+    color:#FFF;
+    text-decoration:none
+  }
+  .mobile-nav a:hover{
+    background-color:rgb(90, 89, 89);
+
+  }@media (min-width: 768px){
+    .mobile-nav{
+      display:none
+    }
+  }
+/* End Of mobile-nav styling */
+
+
 /* ================ Portfolio page styling */
 /* .portfolio-page{
   margin-left: 10rem;
@@ -416,6 +457,7 @@ p > a {
     left: 90%;
     border-radius: 5px;
     transition: transform 0.55s ease-in-out;
+    z-index: 99;
   }.mini-menu:hover{
         transform: rotate(180deg);
   }
