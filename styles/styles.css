@@ -141,6 +141,7 @@ a:hover::after {
   cursor: pointer;
   transform: translateY(-5px);
   transition: transform 0.8s ease;
+  box-shadow: 6px 6px 12px black;
 }
 /* .partial line Not required ATM */
 /* .partial-line{
