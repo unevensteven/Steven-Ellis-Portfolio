@@ -258,7 +258,14 @@ function startTypingLoop() {
 }
 startTypingLoop();
 
+// Add an event listener to the mini-menu element
 
+  
+  document.querySelector('.mini-menu').addEventListener('click', function() {
+   
+    var navBar = document.querySelector('.nav-bar');
+    navBar.style.display = (navBar.style.display === 'block') ? 'none' : 'block';
+  });
 
 
 
