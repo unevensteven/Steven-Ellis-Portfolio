@@ -1,27 +1,29 @@
+var i=0,text;
+  text = "And I am a web developer.     "
 
-// window.onload = function () {
-// 	window.addEventListener('scroll', function (e) {
-// 		if (window.pageYOffset > 100) {
-// 			document.querySelector("header").classList.add('is-scrolling');
-// 		} else {
-// 			document.querySelector("header").classList.remove('is-scrolling');
-// 		}
-// 	});
+  function typing(){
+    var targetElement = document.getElementById("text");
+    if (i < text.length) {
+    targetElement.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 150);
+  } else {
+    
+    targetElement.innerHTML = "";
+    i = 0;
+    setTimeout(startTypingLoop, 1000); 
+  }
+}
+function startTypingLoop() {
+  typing();
+}
+startTypingLoop();
 
-		// const menu_btn = document.querySelector('.mini-menu');
-		// const mobile_menu = document.querySelector('.mobile-nav');
+const myHamburgerButton = document.getElementsByClassName('my-hamburger-button')[0];
+const navBarLinks = document.getElementsByClassName('nav-bar-links')[0];
 
-		// menu_btn.addEventListener('click', function () {
-		// 	menu_btn.classList.toggle('is-active');
-		// 	mobile_menu.classList.toggle('is-active');
-		// });
+myHamburgerButton.addEventListener('click', () => {
+	navBarLinks.classList.toggle('active')
 
+})
 
-	document.addEventListener('DOMContentLoaded', function() {
-		const menuImage = document.getElementById('menuImage');
-		const menu = document.getElementById('menu');
-		menuImage.addEventListener('click', function() {
-			// Toggle the 'hidden' class on the menu to show/hide it
-			menu.classList.toggle('hidden');
-		});
-	});

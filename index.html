@@ -50,18 +50,37 @@
       </li>
     </ul>
   </nav>
-  <!-- <nav class="mobile-nav">
-		<a href="#">About Me</a>
-		<a href="#">My Portfolio</a>
-		<a href="#">Coding Examples</a>
-		<a href="#">SCS Scheme</a>
-    <a href="#">Contact Me</a>
-	</nav> -->
+
 
 <main id="main">
-  <a name=""></a>
+
+<!--  -->
+<div class="mini-nav-bar">
+  <div class="brand">S</div>
+    <div href="#" class="my-hamburger-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  <div class="nav-bar-links">
+    <ul>
+      <li>About Me</li>
+      <li>My Portfolio</li>
+      <li>Coding Examples</li>
+      <li>SCS Scheme</li>
+      <li>Contact</li>
+    </ul>
+
+  </div>
+</div>
+
+  
+  
+
+  
   <div class="hero-image"> 
-    <div class="mini-menu"></div>
+    
+    <!-- <div class="mini-menu"></div> -->
     <div class="hero-text">
       <h1>My name is Steven Ellis</h1>
       <!-- Edited here -->
@@ -235,44 +254,9 @@
   </div>
 </main>
 
-
-<script type="text/javascript">
-  var i=0,text;
-  text = "And I am a web developer.     "
-
-  function typing(){
-    var targetElement = document.getElementById("text");
-    if (i < text.length) {
-    targetElement.innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typing, 150);
-  } else {
-    
-    targetElement.innerHTML = "";
-    i = 0;
-    setTimeout(startTypingLoop, 1000); 
-  }
-}
-function startTypingLoop() {
-  typing();
-}
-startTypingLoop();
-
-// Add an event listener to the mini-menu element
-
-  
-  document.querySelector('.mini-menu').addEventListener('click', function() {
-   
-    var navBar = document.querySelector('.nav-bar');
-    navBar.style.display = (navBar.style.display === 'block') ? 'none' : 'block';
-  });
-
-
-
-
-
-</script>
 <script src="/js/main.js"></script>
+
+
 </body>
 </html>
 
