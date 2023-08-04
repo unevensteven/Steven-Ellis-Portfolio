@@ -66,7 +66,7 @@ li > a {
   color: black;
 }
 
-a::after {
+li > a::after {
   content: "";
   position: absolute;
   bottom: -2px; /* Position the line below the anchor element */
@@ -120,29 +120,7 @@ a:hover::after {
  
 /* =============================== EOF Banner image styling*/
 /* Start of the portolio cards   */
-.latest-news{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-bottom: 20px;
-}
-.article {  /* ========================== card */
-  color: black;
-  min-height: 60vh;
-  max-height: 85vh;
-  max-width:600px;
-  transform: translateY(5px);
-  transition: transform 0.8s ease;
-  margin: 10px;
-  border:1px solid gray;
-  border-radius: 4px;
-}
-.article:hover{
-  cursor: pointer;
-  transform: translateY(-5px);
-  transition: transform 0.8s ease;
-  box-shadow: 6px 6px 12px black;
-}
+
 /* .partial line Not required ATM */
 /* .partial-line{
   border-top: 1px solid rgb(175, 173, 173);
@@ -150,32 +128,7 @@ a:hover::after {
   min-width:400px;
  } */
  /* style the buttons in each card */
- .btn-1,
- .btn-2, 
- .btn-3, 
- .btn-4, 
- .btn-5, 
- .btn-6{
-  color: white;
-  background-color:#2DCC71;
-  border-radius: 3px;
-  padding:10px;
-  border: none;
-  text-decoration: none;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
-     /* .journalist image with before */
- .outer-container{
-  display: flex;
-  justify-content: space-between;
- }
-  .inner-container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-}
+ 
 
 /* End of the portolio cards   */
 
@@ -231,26 +184,10 @@ textarea:focus{
 }
 
 
-/* =================================== footer */
-.my-footer{
-  padding-bottom: 15px;
-}
-.my-footer, 
-.my-footer a{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(56, 56, 56);
-  height:3rem;
-}
-.my-footer a{
-  color: white;
-  text-decoration: none;
-}
+
 
 /* Back Button on pages to return to homepage  */
-/* <a href="http://127.0.0.1:5500/">back</a> */
+
 .back-button{
   margin-left: 210px;
   padding: 15px;
@@ -287,6 +224,7 @@ textarea:focus{
   transform: translatey(5px);
   transition: transform 0.8s ease;
   width: 75vw;
+  background-color: aliceblue;
 }
 .scion-scheme-1::first-letter{
   font-size: 1.9rem;
@@ -296,7 +234,7 @@ textarea:focus{
 
 .scion-scheme-1:hover{
   transform: translatey(-5px);
-  box-shadow: 5px 8px 10px rgb(48, 47, 47);
+  box-shadow: 5px 5px 10px rgb(48, 47, 47);
 }
 p > a {
   position: centre;
@@ -989,6 +927,7 @@ p, h1 {
   align-items: center;
   background-color: #353535;
   color: white;
+  z-index: 99;
 }
 .brand{
   font-size: 3rem;
