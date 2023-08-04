@@ -23,7 +23,7 @@ const myHamburgerButton = document.getElementsByClassName('my-hamburger-button')
 const navBarLinks = document.getElementsByClassName('nav-bar-links')[0];
 
 myHamburgerButton.addEventListener('click', () => {
-	navBarLinks.classList.toggle('active')
+	navBarLinks.classList.toggle('active');
 
-})
+});
 

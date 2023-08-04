@@ -48,8 +48,29 @@
   </nav>
  
  </body>
- 
- <main id="scs-page">
+ <main>
+ <!--  -->
+ <div class="mini-nav-bar">
+  <div class="brand">SWE</div>
+    <div href="#" class="my-hamburger-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  <div class="nav-bar-links">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="/html/about-me.html">About Me</a></li>
+      <li><a href="/html/portfolio.html">My Portfolio</a></li>
+      <li><a href="/html/coding-examples.html">Coding Examples</a></li>
+      <li><a href="/html/SCS-scheme.html">SCS Scheme</a></li>
+      <li><a href="/html/contact-me.html">Contact</a></li>
+    </ul>
+
+  </div>
+</div>
+
+ <div id="scs-page">
   <h1 class="scion-scheme">SCS Scheme</h1>
     <div class="scion-scheme-1">
       <h2>Introduction to the Scion Coalition Scheme</h2>
@@ -57,7 +78,7 @@
     </div>
     <div class="scion-scheme-1">
       <h2>Treehouse</h2>
-      <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.<br><a href="https://teamtreehouse.com/profiles/stevenellis6" target="_blank">  View My TreeHouse Profile Here!</a></p>
+      <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they have covered in certain areas.<br><br><a href="https://teamtreehouse.com/profiles/stevenellis6" target="_blank">  View My TreeHouse Profile Here!</a></p>
     </div>
     <div class="scion-scheme-1">
       <h2>About Netmatters</h2>
@@ -68,10 +89,20 @@
       operating to strict company values</p>
     </div>
   <br>
+  </div>
 </main>
-  <div>
     <a class="back-button" href="http://127.0.0.1:5500/">back</a>
   </div>
+    <script>
+            
+        const myHamburgerButton = document.getElementsByClassName('my-hamburger-button')[0];
+        const navBarLinks = document.getElementsByClassName('nav-bar-links')[0];
 
+        myHamburgerButton.addEventListener('click', () => {
+          navBarLinks.classList.toggle('active');
+
+        });
+
+    </script>
 
 </html>

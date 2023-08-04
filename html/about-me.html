@@ -52,92 +52,85 @@
   
   
   
-<main class="about-me">
+<main>
 
-  
-  <div class="banner-image grayscale-img "> 
-   
-    <div class="banner-text">
-       
+<!--  -->
+<div class="mini-nav-bar">
+  <div class="brand">SWE</div>
+    <div href="#" class="my-hamburger-button">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
+  <div class="nav-bar-links">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/about-me.html">About Me</a></li>
+      <li><a href="../html/portfolio.html">My Portfolio</a></li>
+      <li><a href="../html/coding-examples.html">Coding Examples</a></li>
+      <li><a href="../html/SCS-scheme.html">SCS Scheme</a></li>
+      <li><a href="../html/contact-me.html">Contact</a></li>
+    </ul>
+
   </div>
+</div>
+
+
+<div class="about-me">
+  
   <h1>About me.</h1>
   <div class="about">
     
     <div class="scion-scheme-1">
-      <div class="about-text">An experienced engineer a background in a range of engineering disciplines.  I have a passion for technology and how it can be used to enhance our lives, and an interest in web development and software engineering.  I thrive on the challenges that come with building systems from the ground up, or improving their efficiency or user experience.  I am dedicated to staying up-to-date with the latest technologies and industry best practices.</div>
+      <div class="about-text">An experienced engineer with a background in a range of engineering disciplines. I have a passion for technology and how it can be used to enhance our lives, and an interest in web development and software engineering. I thrive on the challenges that come with building systems from the ground up, or improving their efficiency or user experience. I am dedicated to staying up-to-date with the latest technologies and industry best practices.</div>
     </div> 
     <div class="scion-scheme-1">
       <div class="about-text">In my career, I have had the opportunity to travel extensively, broadening my horizons and gaining valuable insights into different cultures and perspectives. These experiences have shaped my ability to adapt, think creatively, and approach problem-solving with an open mind.  I lived in Asia for several years, and learned to speak another language, allowing me to apreciate cultures diverse from my own.  I love to scuba dive during my time off, have dived all around asia and pacific region, and I am a certified scuba instructor.</div>
     </div>
     <div class="scion-scheme-1">
       <div class="about-text">I started the <a class="scs-scheme" href="https://www.netmatters.co.uk/scions-coalition-scheme" target="_blank">SCS-Coalition scheme</a> in 2023, and this webpage serves as a platform to showcase my skills, projects, and achievements.  Feel free to explore and learn more about my work. I am always eager to collaborate on exciting ventures and contribute to innovative solutions.</div>    
-      
-    </div>
-    <div class="about-text scion-scheme-1">
-      Thank you for visiting, and I look forward to connecting with you!
     </div>
   </div>
 <!--  -->
-  <div class="container">
-    <div class="overlay">
-      <div class = "items"></div>
-      <div class = "items head">
-        <p>Flower Embroidery Hoop Art</p>
-        <hr>
+  
+
+
+<!--  -->
+      <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 5px;">
+        <img src="/img/coming-soon.jpeg">
+      <div class="px-2 py-2">
+
+
+      <p class="mb-1">
+        Thank you for visiting, and I look forward to connecting with you!
+      </p>
+
       </div>
-      <div class = "items price">
-        <p class="old"></p>
-        <p class="new"></p>
+
+      <a href="/html/contact-me.html" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+      Contact Me
+      </a>
+
       </div>
-      <div class="items cart">
-        <i class="fa fa-shopping-cart"></i>
-        <span>ADD TO CART</span>
+
     </div>
-    
-  </div>
-  </div>
-
-<!--  -->
-<div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
-  <img src="https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?auto=compress&cs=tinysrgb" alt="Man with backpack"    
-      class="d-block w-full">
-
-<div class="px-2 py-2">
-<p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
-Travel
-</p>
-
-<h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
-Planning your final summer trip
-</h1>
-
-<p class="mb-1">
-Summer is coming to a close just around the corner. But it's not too late to squeeze in another weekend trip &hellip;
-</p>
-
-</div>
-
-<a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
-Read More
-</a>
-
- 
-
-</div>
-
-
-
-<!--  -->
-
-
-
-<!--  -->
   </main>
   <div>
     <a class="back-button" href="../index.html">back</a>
   </div>
   <br><br><br><br><br>
-  <script src="/js/main.js"></script>
+ 
+ 
+ <script>
+        
+    const myHamburgerButton = document.getElementsByClassName('my-hamburger-button')[0];
+    const navBarLinks = document.getElementsByClassName('nav-bar-links')[0];
+
+    myHamburgerButton.addEventListener('click', () => {
+      navBarLinks.classList.toggle('active');
+
+    });
+
+  </script>
 </body>
 </html>
