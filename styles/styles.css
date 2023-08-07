@@ -223,8 +223,8 @@ textarea:focus{
   background-color: rgb(221, 218, 218);
   transform: translatey(5px);
   transition: transform 0.8s ease;
-  width: 75vw;
-  background-color: aliceblue;
+  width: 90vw;
+  background-color: white;
 }
 .scion-scheme-1::first-letter{
   font-size: 1.9rem;
@@ -235,6 +235,8 @@ textarea:focus{
 .scion-scheme-1:hover{
   transform: translatey(-5px);
   box-shadow: 5px 5px 10px rgb(48, 47, 47);
+  background-color: rgb(240, 240, 240);
+  transition: ease-in 0.7s;
 }
 p > a {
   position: centre;
@@ -532,11 +534,11 @@ p > a {
   margin: auto;
   
   background: grey;
-  background-color: rgb(167, 7, 7);
+  background-color: rgb(253, 253, 253);
   background-size: cover;
   cursor: pointer;
   -webkit-box-shadow: 0 0 15px #000;
-        box-shadow: 0 0 5px #000;
+        box-shadow: 0 5 5px #000;
   }
 
 .overlay {
@@ -545,7 +547,7 @@ p > a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 2fr 1fr;
-  background: yellow;
+  background: white;
   opacity: 0;
   transition: all 0.5s;
   font-family: 'Playfair Display', serif;
@@ -576,18 +578,6 @@ p > a {
   }
 }
 
-.price {
-  font-size: 22px;
-  line-height: 10px;
-  font-weight: bold;  
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.7s;
-  .old {
-    text-decoration: line-through;
-    color: lighten(rgb(77, 77, 77),40%);
-  }
-}
 
 .cart {
   font-size: 12px;
@@ -595,7 +585,7 @@ p > a {
   letter-spacing: 1px;
   font-family: 'Lato', sans-serif;
   transform: translateY(40px);
-  transition: all 0.7s;
+  transition: all 0.5s;
   i {
     font-size: 16px;
   }
