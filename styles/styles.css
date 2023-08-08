@@ -85,7 +85,10 @@ a:hover::after {
 
 /* =============================== Start Of Hero image styling*/
 .hero-image {
-  background-image: url(/img/Banner-image.jpg);
+  background-image: 
+      linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.8),
+    rgb(0, 0, 0, 0.05)),url(/img/Banner-image.jpg);
   height: 900px;
   background-position: center;
   background-size: cover;
@@ -95,13 +98,14 @@ a:hover::after {
   text-align: center;
   position: absolute;
   color: white;
+  font-size: 28px;
   top: 10%;
   left: 10%;
   }
   #text {
     position: absolute;
     color: white;
-    font-size: 22px;
+    font-size: 14px;
     }
     
   /* =============================== EOF Hero image */
